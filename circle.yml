@@ -8,6 +8,8 @@ machine:
 dependencies:
   pre:
     - pip install awscli
+    - echo "aws_access_key_id = $AWS_KEY" >> .aws/config
+    - echo "aws_secret_access_key = $AWS_SECRET_KEY" >> .aws/config
   override:
     - docker info
     - docker build -t thedpd/api-peer .
@@ -19,4 +21,4 @@ deployment:
   hub:
     branch: master
     commands:
-      - ./deploy.sh $CIRCLE_SHA1
+      - /bin/bash deploy.sh $CIRCLE_SHA1
