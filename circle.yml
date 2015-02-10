@@ -12,6 +12,7 @@ dependencies:
     - cp config .aws/config
     - echo "aws_access_key_id = $AWS_KEY" >> .aws/config
     - echo "aws_secret_access_key = $AWS_SECRET_KEY" >> .aws/config
+    - chmod 600 .aws/config
   override:
     - docker info
     - docker build -t thedpd/api-peer .
