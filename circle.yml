@@ -8,13 +8,14 @@ machine:
 dependencies:
   pre:
     - pip install awscli
-    - mkdir .aws
-    - cp config .aws/config
-    - echo "aws_access_key_id = $AWS_KEY" >> .aws/config
-    - echo "aws_secret_access_key = $AWS_SECRET_KEY" >> .aws/config
-    - chmod 600 .aws/config
+    - mkdir -p /home/ubuntu/peer/.aws
+    - cp config /home/ubuntu/.aws/config
+    - echo "aws_access_key_id = $AWS_KEY" >> /home/ubuntu/.aws/config
+    - echo "aws_secret_access_key = $AWS_SECRET_KEY" >> /home/ubuntu/.aws/config
+    - chmod 600 /home/ubuntu/.aws/config
     - ls -la
     - pwd 
+    - whoami
   override:
     - docker info
     - docker build -t thedpd/api-peer .
