@@ -1,0 +1,242 @@
+{
+	"OptionSettings": [
+                {
+                    "OptionName": "AWS_SECRET_KEY", 
+                    "Namespace": "aws:elasticbeanstalk:application:environment", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "AppSource", 
+                    "Namespace": "aws:cloudformation:template:parameter", 
+                    "Value": "https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-samples-eu-west-1/docker-sample-v3.zip"
+                }, 
+                {
+                    "OptionName": "AWS_ACCESS_KEY_ID", 
+                    "Namespace": "aws:elasticbeanstalk:application:environment", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "PARAM1", 
+                    "Namespace": "aws:elasticbeanstalk:application:environment", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "PARAM2", 
+                    "Namespace": "aws:elasticbeanstalk:application:environment", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "InstancePort", 
+                    "Namespace": "aws:cloudformation:template:parameter", 
+                    "Value": "80"
+                }, 
+                {
+                    "OptionName": "PARAM4", 
+                    "Namespace": "aws:elasticbeanstalk:application:environment", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "PARAM3", 
+                    "Namespace": "aws:elasticbeanstalk:application:environment", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "EnvironmentVariables", 
+                    "Namespace": "aws:cloudformation:template:parameter", 
+                    "Value": "PARAM3=,PARAM4=,PARAM1=,PARAM2=,PARAM5=,AWS_SECRET_KEY=,AWS_ACCESS_KEY_ID="
+                }, 
+                {
+                    "OptionName": "HooksPkgUrl", 
+                    "Namespace": "aws:cloudformation:template:parameter", 
+                    "Value": "https://s3-eu-west-1.amazonaws.com/elasticbeanstalk-env-resources-eu-west-1/stalks/eb_docker_3.11.1/lib/hooks.tar.gz"
+                }, 
+                {
+                    "OptionName": "LogPublicationControl", 
+                    "Namespace": "aws:elasticbeanstalk:hostmanager", 
+                    "Value": "false"
+                }, 
+                {
+                    "OptionName": "PARAM5", 
+                    "Namespace": "aws:elasticbeanstalk:application:environment", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "InstanceType", 
+                    "Namespace": "aws:autoscaling:launchconfiguration", 
+                    "Value": "t1.micro"
+                }, 
+                {
+                    "OptionName": "DockerProxyServer", 
+                    "Namespace": "aws:cloudformation:template:parameter", 
+                    "Value": "nginx"
+                }, 
+                {
+                    "OptionName": "IamInstanceProfile", 
+                    "Namespace": "aws:autoscaling:launchconfiguration", 
+                    "Value": "aws-elasticbeanstalk-ec2-role"
+                }, 
+                {
+                    "OptionName": "ImageId", 
+                    "Namespace": "aws:autoscaling:launchconfiguration", 
+                    "Value": "ami-fd27aa8a"
+                }, 
+                {
+                    "OptionName": "MonitoringInterval", 
+                    "Namespace": "aws:autoscaling:launchconfiguration", 
+                    "Value": "5 minute"
+                }, 
+                {
+                    "OptionName": "SecurityGroups", 
+                    "Namespace": "aws:autoscaling:launchconfiguration", 
+                    "Value": "awseb-e-8tb77xfym8-stack-AWSEBSecurityGroup-1FZHIJXGXTH5"
+                }, 
+                {
+                    "OptionName": "EC2KeyName", 
+                    "Namespace": "aws:autoscaling:launchconfiguration", 
+                    "Value": "Ooopsworks"
+                }, 
+                {
+                    "OptionName": "AssociatePublicIpAddress", 
+                    "Namespace": "aws:ec2:vpc"
+                }, 
+                {
+                    "OptionName": "RootVolumeIOPS", 
+                    "Namespace": "aws:autoscaling:launchconfiguration"
+                }, 
+                {
+                    "OptionName": "BlockDeviceMappings", 
+                    "Namespace": "aws:autoscaling:launchconfiguration"
+                }, 
+                {
+                    "OptionName": "RootVolumeType", 
+                    "Namespace": "aws:autoscaling:launchconfiguration"
+                }, 
+                {
+                    "OptionName": "RootVolumeSize", 
+                    "Namespace": "aws:autoscaling:launchconfiguration"
+                }, 
+                {
+                    "OptionName": "MaxSize", 
+                    "Namespace": "aws:autoscaling:asg", 
+                    "Value": "1"
+                }, 
+                {
+                    "OptionName": "Cooldown", 
+                    "Namespace": "aws:autoscaling:asg", 
+                    "Value": "360"
+                }, 
+                {
+                    "OptionName": "MinSize", 
+                    "Namespace": "aws:autoscaling:asg", 
+                    "Value": "1"
+                }, 
+                {
+                    "OptionName": "Subnets", 
+                    "Namespace": "aws:ec2:vpc"
+                }, 
+                {
+                    "OptionName": "RollingUpdateEnabled", 
+                    "Namespace": "aws:autoscaling:updatepolicy:rollingupdate", 
+                    "Value": "false"
+                }, 
+                {
+                    "OptionName": "Availability Zones", 
+                    "Namespace": "aws:autoscaling:asg", 
+                    "Value": "Any"
+                }, 
+                {
+                    "OptionName": "MinInstancesInService", 
+                    "Namespace": "aws:autoscaling:updatepolicy:rollingupdate"
+                }, 
+                {
+                    "OptionName": "MaxBatchSize", 
+                    "Namespace": "aws:autoscaling:updatepolicy:rollingupdate"
+                }, 
+                {
+                    "OptionName": "PauseTime", 
+                    "Namespace": "aws:autoscaling:updatepolicy:rollingupdate"
+                }, 
+                {
+                    "OptionName": "Custom Availability Zones", 
+                    "Namespace": "aws:autoscaling:asg", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "VPCId", 
+                    "Namespace": "aws:ec2:vpc"
+                }, 
+                {
+                    "OptionName": "RollbackLaunchOnFailure", 
+                    "Namespace": "aws:elasticbeanstalk:control", 
+                    "Value": "false"
+                }, 
+                {
+                    "OptionName": "LaunchTimeout", 
+                    "Namespace": "aws:elasticbeanstalk:control", 
+                    "Value": "0"
+                }, 
+                {
+                    "OptionName": "DefaultSSHPort", 
+                    "Namespace": "aws:elasticbeanstalk:control", 
+                    "Value": "22"
+                }, 
+                {
+                    "OptionName": "EnvironmentType", 
+                    "Namespace": "aws:elasticbeanstalk:environment", 
+                    "Value": "SingleInstance"
+                }, 
+                {
+                    "OptionName": "LaunchType", 
+                    "Namespace": "aws:elasticbeanstalk:control", 
+                    "Value": "Migration"
+                }, 
+                {
+                    "OptionName": "Automatically Terminate Unhealthy Instances", 
+                    "Namespace": "aws:elasticbeanstalk:monitoring", 
+                    "Value": "true"
+                }, 
+                {
+                    "OptionName": "Notification Topic Name", 
+                    "Namespace": "aws:elasticbeanstalk:sns:topics"
+                }, 
+                {
+                    "OptionName": "Timeout", 
+                    "Namespace": "aws:elasticbeanstalk:command", 
+                    "Value": "600"
+                }, 
+                {
+                    "OptionName": "Notification Endpoint", 
+                    "Namespace": "aws:elasticbeanstalk:sns:topics", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "BatchSizeType", 
+                    "Namespace": "aws:elasticbeanstalk:command", 
+                    "Value": "Percentage"
+                }, 
+                {
+                    "OptionName": "Application Healthcheck URL", 
+                    "Namespace": "aws:elasticbeanstalk:application", 
+                    "Value": null
+                }, 
+                {
+                    "OptionName": "SSHSourceRestriction", 
+                    "Namespace": "aws:autoscaling:launchconfiguration", 
+                    "Value": "tcp,22,22,0.0.0.0/0"
+                }, 
+                {
+                    "OptionName": "Notification Topic ARN", 
+                    "Namespace": "aws:elasticbeanstalk:sns:topics"
+                }, 
+                {
+                    "OptionName": "BatchSize", 
+                    "Namespace": "aws:elasticbeanstalk:command", 
+                    "Value": "100"
+                }, 
+                {
+                    "OptionName": "Notification Protocol", 
+                    "Namespace": "aws:elasticbeanstalk:sns:topics", 
+                    "Value": "email"
+                }
+            ]
+}
