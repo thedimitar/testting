@@ -15,4 +15,4 @@ aws s3 cp $DOCKERRUN_FILE s3://$EB_BUCKET/$DOCKERRUN_FILE
 aws elasticbeanstalk create-application-version --application-name peerbelt-api --version-label $SHA1 --source-bundle S3Bucket=$EB_BUCKET,S3Key=$DOCKERRUN_FILE
 
 # Update Elastic Beanstalk environment to new version
-aws elasticbeanstalk update-environment --environment-name PROD --version-label $SHA1
+aws elasticbeanstalk update-environment --environment-name TEST --version-label $SHA1
