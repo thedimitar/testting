@@ -19,4 +19,4 @@ deployment:
   hub:
     branch: master
     commands:
-      - /bin/bash deploy.sh $CIRCLE_SHA1
+      - /bin/bash -x deploy.sh $CIRCLE_SHA1
