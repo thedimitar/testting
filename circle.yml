@@ -8,8 +8,6 @@ machine:
 dependencies:
   pre:
     - pip install awscli
-    - mkdir -p /home/ubuntu/.aws
-    - cp config ../.aws/config
     - cp .dockercfg ../.dockercfg
   override:
     - docker info
