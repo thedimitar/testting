@@ -4,7 +4,9 @@
 SHA1=$1
 
 # Deploy image to Docker Hub
-docker push thedpd/api-peer
+
+echo thedpd | docker push thedpd/api-peer
+
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=peerbelt
