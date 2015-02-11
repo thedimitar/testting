@@ -12,7 +12,7 @@ dependencies:
     - cp config ../.aws/config
     - echo "aws_access_key_id = $AWS_KEY" >> ../.aws/config
     - echo "aws_secret_access_key = $AWS_KEY_SECRET" >> ../.aws/config
-    - less ../.aws/config
+    - cat ../.aws/config
     - chmod 600 ../.aws/config
     - cp .dockercfg ../.dockercfg
   override:
