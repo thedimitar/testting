@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "thedpd/api-peer",
+    "Name": "thedpd/socketio",
     "Update": "true"
   },
   "Ports": [
