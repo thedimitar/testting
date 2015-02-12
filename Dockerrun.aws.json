@@ -2,7 +2,7 @@
   "AWSEBDockerrunVersion": "1",
    "Authentication": {
     "Bucket": "peerbelt",
-    "Key": ".dockercfg"
+    "Key": "dockercfg"
   },
   "Image": {
     "Name": "thedpd/socketio",
